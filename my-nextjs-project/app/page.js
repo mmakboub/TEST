@@ -1,6 +1,6 @@
 "use client";
-import { BsFillPeopleFill } from "react-icons/bs";
-import { IoSettings } from "react-icons/io5";
+import { GoPeople } from "react-icons/go";
+import { IoSettingsOutline } from "react-icons/io5";
 
 import Tab1 from "./components/Tab1";
 import Tab2 from "./components/Tab2";
@@ -14,26 +14,30 @@ export default function Home() {
   };
 
   return (
-    <main className="flex justify-center bg-[#0a111f] items-center h-screen">
-      <div className="w-1/2 h-3/4 bg-[#202c3a] rounded-xl overflow-hidden">
-        <div className="w-full h-full flex flex-row gap-5 p-6 rounded-xl overflow-x-auto overflow-y-auto">
+    <main className="flex justify-center bg-[#0c0f1a] items-center h-screen">
+      <div className="w-1/2 h-3/4 bg-[#151928] rounded-xl overflow-hidden">
+        <div className="w-full h-full flex flex-row gap-5 px-8 py-7 rounded-xl overflow-x-auto overflow-y-auto">
           {/* styling & handling Vertical tabs */}
-          <div className="bg-[#0f172a] flex justify-center flex-col p-3 w-[10%] rounded-[20px]">
+          <div className="bg-[#0c0f1a] flex justify-center flex-col p-3 w-[10%] rounded-[20px]">
             <button
-              className={`flex h-1/2 w-full items-center font-vietnam text-xl  font-bold text-white ${
-                activeTab === "tab1" ? "bg-[#64748b]" : ""
+              className={`flex h-[10%] w-full items-center justify-center font-vietnam text-xl rounded-xl font-bold  ${
+                activeTab === "tab1" ? "bg-[#151928]" : ""
               }`}
               onClick={() => handleTabClick("tab1")}
             >
-              <BsFillPeopleFill />
+              <GoPeople
+                style={{ width: "30px", height: "50px", color: "#cbd5e1" }}
+              />
             </button>
             <button
-              className={`flex h-1/2 w-full items-center font-vietnam text-xl pl-7 font-bold text-white ${
-                activeTab === "tab2" ? "bg-[#64748b]" : ""
+              className={`flex h-[10%] w-full items-center justify-center font-vietnam text-xl rounded-xl font-bold  ${
+                activeTab === "tab2" ? "bg-[#151928]" : ""
               }`}
               onClick={() => handleTabClick("tab2")}
             >
-              <IoSettings />
+              <IoSettingsOutline
+                style={{ width: "30px", height: "50px", color: "#cbd5e1" }}
+              />
             </button>
           </div>
           {/* Rendering Content */}
