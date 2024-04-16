@@ -21,14 +21,14 @@ function Tab1() {
       <div className="w-[full] h-[80%]  ">
         <div className="grid grid-cols-4 gap-5 w-full h-full">
           <div className="bg-[#2f3846] flex flex-col items-center  rounded-lg gap-3   h-50 w-45 justify-center">
-            <div className="flex items-center justify-center w-[40%] h-[30%] rounded-full bg-white">
+            <div className="flex items-center justify-center w-[35%] h-[30%] rounded-full bg-[#151928]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="#cbd5e1"
-                className="w-8 h-8"
+                className="w-10 h-10 m-auto"
               >
                 <path
                   strokeLinecap="round"
@@ -43,11 +43,11 @@ function Tab1() {
             </h1>
           </div>
           <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45">
-            <div className="flex justify-end h-10 w-full">
+            <div className="flex justify-end  w-full">
               <FaCircle style={{ fontSize: "10px", color: "#e879f9" }} />
             </div>
             <div className="flex flex-col gap-3 justify-center items-center h-full">
-              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 mr-4">
+              <div className="rounded-full  h-20 w-20 flex items-center justify-center bg-gray-200 ">
                 <Image
                   src="/tree-736885_640.jpg"
                   alt="Image"
@@ -63,9 +63,9 @@ function Tab1() {
             </div>
           </div>
           <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45">
-            <div className="flex justify-end h-10 w-full"></div>
+            <div className="flex justify-end w-full"></div>
             <div className="flex flex-col gap-3 justify-center items-center h-full">
-              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 mr-4">
+              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 ">
                 <Image
                   src="/tree-736885_640.jpg"
                   alt="Image"
@@ -81,11 +81,11 @@ function Tab1() {
             </div>
           </div>
           <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45">
-            <div className="flex justify-end h-10 w-full">
+            <div className="flex justify-end  w-full">
               <FaCircle style={{ fontSize: "10px", color: "#e879f9" }} />
             </div>
             <div className="flex flex-col gap-3 justify-center items-center h-full">
-              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 mr-4">
+              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 ">
                 <Image
                   src="/tree-736885_640.jpg"
                   alt="Image"
@@ -101,11 +101,11 @@ function Tab1() {
             </div>
           </div>
           <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45">
-            <div className="flex justify-end h-10 w-full">
+            <div className="flex justify-end  w-full">
               <FaCircle style={{ fontSize: "10px", color: "#e879f9" }} />
             </div>
             <div className="flex flex-col justify-center gap-3 items-center h-full">
-              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 mr-4">
+              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 ">
                 <Image
                   src="/tree-736885_640.jpg"
                   alt="Image"
@@ -121,11 +121,11 @@ function Tab1() {
             </div>
           </div>
           <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45">
-            <div className="flex justify-end h-10 w-full">
+            <div className="flex justify-end  w-full">
               <FaCircle style={{ fontSize: "10px", color: "#0c0f1a" }} />
             </div>{" "}
             <div className="flex flex-col justify-center gap-3 items-center h-full">
-              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 mr-4">
+              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 ">
                 <Image
                   src="/tree-736885_640.jpg"
                   alt="Image"
@@ -141,11 +141,11 @@ function Tab1() {
             </div>
           </div>
           <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45 ">
-            <div className="flex justify-end h-10 w-full">
+            <div className="flex justify-end  w-full">
               <FaCircle style={{ fontSize: "10px", color: "#0c0f1a" }} />
             </div>
             <div className="flex flex-col gap-3 justify-center  items-center h-full">
-              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 mr-4">
+              <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 ">
                 <Image
                   src="/tree-736885_640.jpg"
                   alt="Image"
