@@ -2,9 +2,11 @@ import { VscArrowLeft } from "react-icons/vsc";
 import { BsTable } from "react-icons/bs";
 
 import { FaCircle } from "react-icons/fa";
-
+import React, { useState } from "react";
 import Image from "next/image";
 function Tab1() {
+  const [counter, setCounter] = useState(0); // Initialize counter state
+
   function gototab(id) {
     let element = document.getElementById(id);
     let clone = element.cloneNode(true);
@@ -21,6 +23,9 @@ function Tab1() {
     clone.style.left = `${elementX}px`;
     clone.style.top = `${elementY}px`;
     document.body.appendChild(clone);
+
+    // Increment counter when a grid is moved to tabCube
+    setCounter(counter + 1);
 
     // Déplacer la copie
     setTimeout(() => {
@@ -47,6 +52,7 @@ function Tab1() {
             className="tab-cube"
             style={{ fontSize: "30px", color: "#cbd5e1" }}
           />
+          <span className="counter text-[#cbd5e1] ">{counter}</span>
         </div>
       </div>
       <div className="w-[full] h-[80%]  ">
