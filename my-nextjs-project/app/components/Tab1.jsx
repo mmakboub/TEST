@@ -5,18 +5,18 @@ import { FaCircle } from "react-icons/fa";
 
 import Image from "next/image";
 function Tab1() {
-  function gotoblue(id) {
+  function gototab(id) {
     let element = document.getElementById(id);
     let clone = element.cloneNode(true);
     clone.removeAttribute("id");
 
-    const blueCube = document.querySelector(".blue-cube");
-    let blueCubeX = blueCube.getBoundingClientRect().x;
-    let blueCubeY = blueCube.getBoundingClientRect().y;
+    const tabCube = document.querySelector(".tab-cube");
+    let tabCubeX = tabCube.getBoundingClientRect().x;
+    let tabCubeY = tabCube.getBoundingClientRect().y;
     let elementX = element.getBoundingClientRect().x;
     let elementY = element.getBoundingClientRect().y;
-    let x = blueCubeX - elementX - 75;
-    let y = blueCubeY - elementY - 75;
+    let x = tabCubeX - elementX - 75;
+    let y = tabCubeY - elementY - 75;
     clone.style.position = "absolute";
     clone.style.left = `${elementX}px`;
     clone.style.top = `${elementY}px`;
@@ -44,7 +44,7 @@ function Tab1() {
         </div>
         <div>
           <BsTable
-            className="blue-cube"
+            className="tab-cube"
             style={{ fontSize: "30px", color: "#cbd5e1" }}
           />
         </div>
@@ -75,7 +75,7 @@ function Tab1() {
           </div>
           <div
             id="1"
-            onClick={() => gotoblue("1")}
+            onClick={() => gototab("1")}
             className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
           >
             <div className="flex justify-end  w-full">
@@ -99,7 +99,7 @@ function Tab1() {
           </div>
           <div
             id="2"
-            onClick={() => gotoblue("2")}
+            onClick={() => gototab("2")}
             className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
           >
             <div className="flex justify-end w-full"></div>
@@ -121,7 +121,7 @@ function Tab1() {
           </div>
           <div
             id="3"
-            onClick={() => gotoblue("3")}
+            onClick={() => gototab("3")}
             className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
           >
             <div className="flex justify-end  w-full">
@@ -145,7 +145,7 @@ function Tab1() {
           </div>
           <div
             id="4"
-            onClick={() => gotoblue("4")}
+            onClick={() => gototab("4")}
             className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
           >
             <div className="flex justify-end  w-full">
@@ -169,7 +169,7 @@ function Tab1() {
           </div>
           <div
             id="5"
-            onClick={() => gotoblue("5")}
+            onClick={() => gototab("5")}
             className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
           >
             <div className="flex justify-end  w-full">
@@ -193,7 +193,7 @@ function Tab1() {
           </div>
           <div
             id="6"
-            onClick={() => gotoblue("6")}
+            onClick={() => gototab("6")}
             className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45 "
           >
             <div className="flex justify-end  w-full">
