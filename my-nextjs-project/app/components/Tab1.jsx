@@ -7,6 +7,9 @@ import Image from "next/image";
 function Tab1() {
   function gotoblue(id) {
     let element = document.getElementById(id);
+    let clone = element.cloneNode(true);
+    clone.removeAttribute("id");
+
     const blueCube = document.querySelector(".blue-cube");
     let blueCubeX = blueCube.getBoundingClientRect().x;
     let blueCubeY = blueCube.getBoundingClientRect().y;
@@ -14,12 +17,22 @@ function Tab1() {
     let elementY = element.getBoundingClientRect().y;
     let x = blueCubeX - elementX - 75;
     let y = blueCubeY - elementY - 75;
-    element.style.transform = `translate(${x}px, ${y}px) scale(0.25)`;
-    element.style.transition = "transform 1s ease-in-out";
-      // setTimeout(() => {
-    //   element.style.transform = "none";
-    // }, 1000);
+    clone.style.position = "absolute";
+    clone.style.left = `${elementX}px`;
+    clone.style.top = `${elementY}px`;
+    document.body.appendChild(clone);
+
+    // Déplacer la copie
+    setTimeout(() => {
+      clone.style.transform = `translate(${x}px, ${y}px) scale(0.25)`;
+      clone.style.transition = "transform 1s ease-in-out";
+      clone.style.pointerEvents = "none";
+    }, 10);
+    setTimeout(() => {
+      clone.remove();
+    }, 1000);
   }
+
   return (
     <div className="w-full p-5 h-full flex flex-col">
       <div className="w-full h-[15%] flex justify-between items-center">
