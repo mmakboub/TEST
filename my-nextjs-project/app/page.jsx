@@ -1,5 +1,3 @@
-"use client";
-import React, { useState } from "react";
 import Tabs from "./components/tabs";
 
 export default function Home() {
