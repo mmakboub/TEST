@@ -1,4 +1,7 @@
 "use client";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { IoSettings } from "react-icons/io5";
+
 import Tab1 from "./components/Tab1";
 import Tab2 from "./components/Tab2";
 import React, { useState } from "react"; // Don't forget to import React for using hooks
@@ -16,24 +19,24 @@ export default function Home() {
           {/* styling & handling Vertical tabs */}
           <div className=" bg-[#0f172a] flex justify-center flex-col w-[10%] rounded-xl  ">
             <button
-              className={`flex h-1/2 w-full items-center  font-vietnam  text-xl pl-5 font-bold text-white  ${
+              className={`flex h-1/2 w-full items-center  font-vietnam  text-xl pl-7 font-bold text-white  ${
                 activeTab === "tab1" ? "bg-[#64748b]" : ""
               }`}
               onClick={() => handleTabClick("tab1")}
             >
-              tab1
+              <BsFillPeopleFill />
             </button>
             <button
-              className={`flex h-1/2  w-full items-center   font-vietnam  text-xl pl-5 font-bold text-white  ${
+              className={`flex h-1/2  w-full items-center   font-vietnam  text-xl pl-7 font-bold text-white  ${
                 activeTab === "tab2" ? "bg-[#64748b]" : ""
               }`}
               onClick={() => handleTabClick("tab2")}
             >
-              tab2
+              <IoSettings />
             </button>
           </div>
           {/* Rendering Content */}
-          <div className=" w-full bg-[#0f172a] h-[full] rounded-xl">
+          <div className=" w-full  h-[full] rounded-xl">
             {activeTab === "tab1" && <Tab1 />}
             {activeTab === "tab2" && <Tab2 />}
           </div>
