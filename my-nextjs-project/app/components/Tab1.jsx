@@ -5,6 +5,21 @@ import { FaCircle } from "react-icons/fa";
 
 import Image from "next/image";
 function Tab1() {
+  function gotoblue(id) {
+    let element = document.getElementById(id);
+    const blueCube = document.querySelector(".blue-cube");
+    let blueCubeX = blueCube.getBoundingClientRect().x;
+    let blueCubeY = blueCube.getBoundingClientRect().y;
+    let elementX = element.getBoundingClientRect().x;
+    let elementY = element.getBoundingClientRect().y;
+    let x = blueCubeX - elementX - 75;
+    let y = blueCubeY - elementY - 75;
+    element.style.transform = `translate(${x}px, ${y}px) scale(0.25)`;
+    element.style.transition = "transform 1s ease-in-out";
+      // setTimeout(() => {
+    //   element.style.transform = "none";
+    // }, 1000);
+  }
   return (
     <div className="w-full p-5 h-full flex flex-col">
       <div className="w-full h-[15%] flex justify-between items-center">
@@ -15,7 +30,10 @@ function Tab1() {
           </button>
         </div>
         <div>
-          <BsTable style={{ fontSize: "30px", color: "#cbd5e1" }} />
+          <BsTable
+            className="blue-cube"
+            style={{ fontSize: "30px", color: "#cbd5e1" }}
+          />
         </div>
       </div>
       <div className="w-[full] h-[80%]  ">
@@ -42,7 +60,11 @@ function Tab1() {
               Create Group
             </h1>
           </div>
-          <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45">
+          <div
+            id="1"
+            onClick={() => gotoblue("1")}
+            className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
+          >
             <div className="flex justify-end  w-full">
               <FaCircle style={{ fontSize: "10px", color: "#e879f9" }} />
             </div>
@@ -62,7 +84,11 @@ function Tab1() {
               </div>
             </div>
           </div>
-          <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45">
+          <div
+            id="2"
+            onClick={() => gotoblue("2")}
+            className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
+          >
             <div className="flex justify-end w-full"></div>
             <div className="flex flex-col gap-3 justify-center items-center h-full">
               <div className="rounded-full h-20 w-20 flex items-center justify-center bg-gray-200 ">
@@ -80,7 +106,11 @@ function Tab1() {
               </div>
             </div>
           </div>
-          <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45">
+          <div
+            id="3"
+            onClick={() => gotoblue("3")}
+            className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
+          >
             <div className="flex justify-end  w-full">
               <FaCircle style={{ fontSize: "10px", color: "#e879f9" }} />
             </div>
@@ -100,7 +130,11 @@ function Tab1() {
               </div>
             </div>
           </div>
-          <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45">
+          <div
+            id="4"
+            onClick={() => gotoblue("4")}
+            className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
+          >
             <div className="flex justify-end  w-full">
               <FaCircle style={{ fontSize: "10px", color: "#e879f9" }} />
             </div>
@@ -120,7 +154,11 @@ function Tab1() {
               </div>
             </div>
           </div>
-          <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45">
+          <div
+            id="5"
+            onClick={() => gotoblue("5")}
+            className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
+          >
             <div className="flex justify-end  w-full">
               <FaCircle style={{ fontSize: "10px", color: "#0c0f1a" }} />
             </div>{" "}
@@ -140,7 +178,11 @@ function Tab1() {
               </div>
             </div>
           </div>
-          <div className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45 ">
+          <div
+            id="6"
+            onClick={() => gotoblue("6")}
+            className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45 "
+          >
             <div className="flex justify-end  w-full">
               <FaCircle style={{ fontSize: "10px", color: "#0c0f1a" }} />
             </div>
