@@ -15,7 +15,7 @@ export default function Tabs() {
 
   return (
     <div className="w-[55%] h-3/4 bg-[#151928] rounded-xl overflow-hidden">
-      <div className="w-full h-full flex flex-row gap-5 px-8 py-7 rounded-xl overflow-x-auto overflow-y-auto">
+      <div className="w-full h-full flex flex-row gap-5 px-8 py-7 rounded-xl">
         <div className="bg-[#0c0f1a] flex justify-center flex-col p-3 w-[10%] rounded-[20px]">
           <button
             className={`flex h-[10%] w-full items-center justify-center font-vietnam text-xl rounded-xl font-bold  ${

@@ -55,8 +55,8 @@ function Tab1() {
           <span className="counter text-[#cbd5e1] ">{counter}</span>
         </div>
       </div>
-      <div className="w-[full] h-[80%]  ">
-        <div className="grid grid-cols-4 gap-5 w-full h-full">
+      <div className="w-[full] h-[80%]  overflow-hidden  ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5 w-full h-full  overflow-x-auto overflow-y-auto">
           <div className="bg-[#2f3846] flex flex-col items-center  rounded-lg gap-3   h-50 w-45 justify-center">
             <div className="flex items-center justify-center w-[35%] h-[30%] rounded-full bg-[#151928]">
               <svg
