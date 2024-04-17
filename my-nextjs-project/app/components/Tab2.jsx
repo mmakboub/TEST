@@ -20,25 +20,25 @@ export default function tab2() {
   return (
     <div style={{ position: "relative" }}>
       <div className="w-full flex items-center py-8 justify-end">
-        <div className="blue-cube w-[50px] h-[50px] bg-blue-500 mr-[50px]"></div>
+        <div className="blue-cube w-[50px] h-[50px] bg-[#1c1a36] mr-[50px]"></div>
       </div>
       <div
-        className="flex flex-row w-full items-center justify-around bg-red-500 py-4"
+        className="flex flex-row w-full items-center justify-around bg-[#292839] py-4"
         style={{ position: "absolute" }}
       >
         <div
           id="1"
-          className="w-[200px] h-[200px] bg-green-500"
+          className="w-[200px] h-[200px] bg-[#151421]"
           onClick={() => gotoblue("1")}
         ></div>
         <div
           id="2"
-          className="w-[200px] h-[200px] bg-green-500"
+          className="w-[200px] h-[200px] bg-[#151421]"
           onClick={() => gotoblue("2")}
         ></div>
         <div
           id="3"
-          className="w-[200px] h-[200px] bg-green-500"
+          className="w-[200px] h-[200px] bg-[#151421]"
           onClick={() => gotoblue("3")}
         ></div>
       </div>

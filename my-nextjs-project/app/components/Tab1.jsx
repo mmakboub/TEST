@@ -43,7 +43,7 @@ function Tab1() {
       <div className="w-full h-[15%] flex justify-between items-center">
         <div className="flex items-center">
           <VscArrowLeft style={{ fontSize: "30px", color: "#cbd5e1" }} />
-          <button className="ml-2 text-[#cbd5e1] text-3xl font-semibold">
+          <button className="ml-2 font-serif text-[#cbd5e1] text-3xl font-semibold">
             Groups
           </button>
         </div>
@@ -75,7 +75,7 @@ function Tab1() {
               </svg>
             </div>
 
-            <h1 className=" text-lg text-center text-[#cbd5e1]">
+            <h1 className=" text-lg text-center font-serif text-[#cbd5e1]">
               Create Group
             </h1>
           </div>
@@ -98,8 +98,10 @@ function Tab1() {
                 />
               </div>
               <div>
-                <p className="text-lg text-center text-white">Cuisine</p>
-                <p className="text-lg text-center text-white">35 member</p>
+                <p className="text-lg text-center font-serif text-white">
+                  Cuisine
+                </p>
+                <p className="text-lg text-center  text-white">35 member</p>
               </div>
             </div>
           </div>
@@ -120,8 +122,8 @@ function Tab1() {
                 />
               </div>
               <div>
-                <p className="text-lg text-center text-white">Art</p>
-                <p className="text-lg text-center text-white">9 member</p>
+                <p className="text-lg text-center font-serif text-white">Art</p>
+                <p className="text-lg text-center  text-white">9 member</p>
               </div>
             </div>
           </div>
@@ -144,8 +146,10 @@ function Tab1() {
                 />
               </div>
               <div>
-                <p className="text-lg text-center text-white">Workout</p>
-                <p className="text-lg text-center text-white">27 member</p>
+                <p className="text-lg text-center font-serif text-white">
+                  Workout
+                </p>
+                <p className="text-lg text-center  text-white">27 member</p>
               </div>
             </div>
           </div>
@@ -154,7 +158,7 @@ function Tab1() {
             onClick={() => gototab("4")}
             className="bg-[#0c0f1a] p-3 flex flex-col rounded-lg h-50 w-45"
           >
-            <div className="flex justify-end  w-full">
+            <div className="flex justify-end   w-full">
               <FaCircle style={{ fontSize: "10px", color: "#e879f9" }} />
             </div>
             <div className="flex flex-col justify-center gap-3 items-center h-full">
@@ -168,8 +172,10 @@ function Tab1() {
                 />
               </div>
               <div>
-                <p className="text-lg text-center text-white">gaming</p>
-                <p className="text-lg text-center text-white">105 member</p>
+                <p className="text-lg text-center font-serif text-white">
+                  gaming
+                </p>
+                <p className="text-lg text-center  text-white">105 member</p>
               </div>
             </div>
           </div>
@@ -192,8 +198,10 @@ function Tab1() {
                 />
               </div>
               <div>
-                <p className="text-lg text-center text-white">Hiking</p>
-                <p className="text-lg text-center text-white">97 member</p>
+                <p className="text-lg text-center font-serif text-white">
+                  Hiking
+                </p>
+                <p className="text-lg text-center  text-white">97 member</p>
               </div>
             </div>
           </div>
@@ -216,8 +224,10 @@ function Tab1() {
                 />
               </div>
               <div>
-                <p className="text-lg text-center text-white">Yoga</p>
-                <p className="text-lg text-white">65 member</p>
+                <p className="text-lg text-center font-serif text-white">
+                  Yoga
+                </p>
+                <p className="text-lg text-white ">65 member</p>
               </div>
             </div>
           </div>
